@@ -1,0 +1,92 @@
+.body-diagram-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+  }
+  
+  /* Central Figure Section */
+  .figure-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .figure-diagram {
+    position: relative;
+    width: 150px;
+    height: 400px;
+    background-color: #0078d7;
+    border-radius: 20px;
+  }
+  
+  .body-label {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Positioning the Labels */
+  .height-label {
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .waist-diameter-label {
+    top: 150px;
+    left: -100px;
+    transform: rotate(-90deg);
+  }
+  
+  .hip-diameter-label {
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Metrics Section */
+  .metrics-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .metric-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .metric-title {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .metric-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .metric-change {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .metric-change.positive {
+    color: green;
+  }
+  

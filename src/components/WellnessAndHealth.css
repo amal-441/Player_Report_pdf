@@ -1,0 +1,239 @@
+/* General Container Styles */
+.wellness-container {
+  position: relative; 
+  left: 50px; 
+  width: 160%;
+  max-width: 1200px;
+  margin-right: 20px;
+  gap: 20px;
+  margin: 10px;
+  padding: 100px;
+  background-color: #ffffff;
+  flex-basis: 25%;
+
+}
+
+
+.wellness-title {
+  text-align: center;
+  font-size: 29px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Grid Layout */
+.wellness-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; /* First metric 2 columns wide, others 1 column each */
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(900px, 1fr)); /* Adjust the minimum size */
+  margin-bottom: 20px;
+  margin-left: 100px;
+  width:100%;
+  gap: 500px; /* Add space between items */
+ 
+
+}
+
+/* Metric Card Styles */
+.metric-card {
+  background: #fff;
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  gap: 20px;
+  margin-left: 200%;
+  height:300px;
+}
+
+.metric-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.chart {
+  height: 100px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.status {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Hydration and Sleep Styles */
+.hydration-sleep {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metric-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+
+.metric-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.metric-value {
+  font-size: 18px;
+  color: #333;
+}
+
+.double-ring-chart {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.circle-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.outer-ring {
+  fill: none;
+  stroke: #00bfff;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.inner-ring {
+  fill: none;
+  stroke: #8a2be2;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+
+.bar-graph {
+  display: block;
+  margin: 0 auto;
+}
+
+.metric-card .chart {
+  margin-top: 10px;
+}
+
+.bar-chart {
+  width: 100%;
+  height: auto;
+}
+
+
+.wellness-container {
+  padding: 20px;
+}
+
+.metric-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.wide-metric {
+  width: 100%; /* Full width to accommodate the wide graph */
+}
+
+.metric-icon-large {
+  font-size: 40px;
+  color: #ff007f;
+}
+
+.bar-graph {
+  width: 100%;
+  height: auto;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.wellness-container {
+  font-size: 0.9rem; /* Reduce base font size */
+}
+
+.metric-card {
+  padding: 10px; /* Reduce padding */
+  margin: 5px; /* Reduce margins */
+  width: 150px; /* Adjust width of metric cards */
+  height: auto; /* Adjust height to fit content */
+}
+
+.metric-icon-large {
+  font-size: 1.5rem; /* Reduce icon size */
+}
+
+.metric-item {
+  font-size: 0.8rem; /* Reduce text size */
+}
+
+.double-ring-chart,
+.bar-graph {
+  width: 120px; /* Reduce chart width */
+  height: 120px; /* Reduce chart height */
+}
+
+.metric-name {
+  font-size: 0.75rem; /* Adjust metric name font size */
+}
+
+.metric-value {
+  font-size: 1rem; /* Adjust metric value font size */
+}
+
+.wellness-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust spacing between metric cards */
+}
+
+.bar-graph text {
+  font-size: 0.7rem; /* Scale down axis markings */
+}
+
+.bar-graph rect {
+  width: 8px; /* Narrow bar width */
+}
+
+.attendance-title-bar {
+  background-color: #8acff0;
+  padding: 0.1px 15px; 
+  font-size: 9px; 
+  position: relative; 
+  top: -15px; 
+  left: -95px; 
+  line-height: 1; 
+}
+
+.attendance-title {
+  font-size: 12px;
+  font-weight: bold;
+}

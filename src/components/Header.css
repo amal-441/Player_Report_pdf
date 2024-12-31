@@ -1,0 +1,99 @@
+.header-container {
+  width: 100%;
+  background-color: #e00a0a; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-top-border {
+  height: 60px; 
+  background-color: grey; 
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* White border below the grey border */
+.header-white-border {
+  height: 35px; 
+  background-color: #ddd;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+.header-name {
+  position: absolute;
+  left: 75px; 
+  top: 16%; 
+  transform: translateY(-50%); /* Perfect vertical centering */
+  font-size: 20px; /* Adjust font size as needed */
+  color: rgb(245, 245, 245); 
+}
+
+/* Profile image styling */
+
+.profile-image {
+  width: 100px; /* Set the desired size for the image */
+  height: 100px; /* Match the width for a circular shape */
+  object-fit: cover; 
+  border: 2px solid #ccc; 
+  border-radius: 50%; 
+  position: absolute; 
+  top: 100px; 
+  right: 670px; 
+  margin-bottom: 300px; 
+}
+
+
+.report-heading {
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #050000; 
+  text-align: left;
+  line-height: 30px;
+  margin-top: 5px; 
+  padding-left: 85px; 
+  width: 100%; 
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  font-weight: bold;
+  padding-right: 20px; 
+}
+
+.logo {
+  width: 40px;
+  height: auto; 
+  position: absolute;
+  right: 230px; 
+  top: 16%; 
+  transform: translateY(-50%); 
+  font-size: 20px; 
+  color: rgb(245, 245, 245); 
+}
+
+
+.company-name {
+  position: absolute;
+  right: 75px; 
+  top: 16%; 
+  transform: translateY(-50%); 
+  font-size: 20px; 
+  color: rgb(245, 245, 245); 
+}
+
+.rightText{
+  font-weight: bold; 
+  margin-left: 90px; 
+  display: inline-block; 
+  white-space: nowrap; 
+  right: 100px; 
+}

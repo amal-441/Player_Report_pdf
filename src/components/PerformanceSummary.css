@@ -1,0 +1,91 @@
+.performance-summary {
+  margin: 20px;
+  padding: 20px;
+  background-color: red; /* Removed redundant background-color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.performance-layout {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 20px; /* Space between rows */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Each row will be a flex container */
+.performance-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px; /* Space between the columns........ */
+  max-width: 1200px; /* Limit the row's width for centralized layout */
+  margin-bottom: 20px;
+}
+
+/* Each event box takes up 45% width of the row */
+.performance-events {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%; /* Adjust width to take up 45% of the row */
+  text-align: center;
+}
+
+/* Title Styling for 100m, 200m, Long Jump, Coach's Comments */
+.event-title-bar {
+  background-color: #004891; /* Blue background */
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.event-title {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+/* Event Cards (100m, 200m, Long Jump) */
+.event-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.event-content {
+  margin-top: 15px;
+}
+
+/* Event Table Headers */
+.event-table-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  color: white;
+  background-color: #1e90ff; /* Set header background */
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.event-table-body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px;
+  padding: 10px;
+}
+
+.event-table-item {
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  padding: 10px 0;
+}
