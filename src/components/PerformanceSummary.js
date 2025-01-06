@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center', // Centers the entire row horizontally correcty
     alignItems: 'center', // Vertically aligns items in the center
     fontSize: 10,
-    marginTop: -15,
+    marginTop: -40,
     marginLeft: 350,
     marginBottom: -15,
     backgroundColor: 'white',
@@ -22,8 +22,9 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.1)',
     padding: '0px 2px',
-    width: '80%', // Make the row take the full width
+    width: '85%', // Make the row take the full width
     height: 'auto',
+    
   },
   performanceHorizontalBarContainer: {
     display: 'flex',
@@ -31,7 +32,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center', // Align items horizontally, starting from the left
     flexDirection: 'row', // Arrange elements in a horizontal row
     width: '100%', // Take full width of the container
-    marginRight: "580px"
+    marginRight: "580px",
+    border: '1px solid #ccc', // Create a solid border
+    borderRadius: 5, // Add slight border radius
+    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', // Adjust shadow for a softer look
+
   },
   performanceHorizontalBar: {
     height: 8,
@@ -69,7 +74,7 @@ const PerformanceSummary = () => {
       { label: 'Avg. Score', value: '11.35 s' },
       { label: 'Season Best', value: '11.25 s' },
       { label: 'Min. Score', value: '11.50 s' },
-    ],
+    ], 
     ranks: [
       { label: 'District', value: '01 / 368' },
       { label: 'State', value: '08 / 1852' },
@@ -136,8 +141,11 @@ const PerformanceSummary = () => {
           ranks={data100m.ranks}
           data={data100m.data}
         />
+        
       </View>
+      
     </View>
+   
   );
 };
 
